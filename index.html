@@ -36,6 +36,9 @@
         if (!response.ok) throw new Error("HTTP error " + response.status);
         const data = await response.json();
         console.log(data);
+        let myData = JSON.stringify(data,null,4);
+        myData = "<pre>" + myData + "</pre>";
+        document.getElementById("output").innerHTML = myData;
         
       } catch (err) {
         document.getElementById("output").innerText = "Error loading data: " + err;
