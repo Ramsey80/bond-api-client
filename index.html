@@ -33,15 +33,6 @@
   <h3 id="filmtitle">Title Will Go Here</h3>
   <div id="films"><p>Films will go here</p></div>
   <div id="output">Results go here</div>
-     <div class="film">
-     <b>Film</b>: 1<br>
-     <b>Title</b>: Dr. No<br>
-     <b>Director</b>: Content goes here<br>
-     <b>Producers</b>: Content goes here<br>
-     <b>Writers</b>: Content goes here<br>
-     <b>Composer</b>: Content goes here<br>
-     <b>Budget</b>: Content goes here<br>
-     <b>Box Office</b>: Content goes here<br>
      <div class="pic"><img src="https://newmanix.com/classes/it122/bond-web-service/thumbnails/dr-no.jpg"></div>
   </div>
 
@@ -66,9 +57,9 @@
         if (!response.ok) throw new Error("HTTP error " + response.status);
         const data = await response.json();
         console.log(data);
-        let myData = JSON.stringify(data,null,4);
-        myData = "<pre>" + myData + "</pre>";
-        document.getElementById("output").innerHTML = myData;
+      //  let myData = JSON.stringify(data,null,4);
+      //  myData = "<pre>" + myData + "</pre>";
+      //  document.getElementById("output").innerHTML = myData;
         
         document.getElementById("filmtitle").innerHTML = data.title;
       } catch (err) {
