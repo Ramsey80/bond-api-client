@@ -40,6 +40,7 @@
         myData = "<pre>" + myData + "</pre>";
         document.getElementById("output").innerHTML = myData;
         
+        document.getElementById("filmtitle").innerHTML = data.title;
       } catch (err) {
         document.getElementById("output").innerText = "Error loading data: " + err;
       }
