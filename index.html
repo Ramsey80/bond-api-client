@@ -70,7 +70,19 @@
         document.getElementById("output").innerText = "Error loading data: " + err;
       }
     }
+    function bondTemplate(film){
+      return ``;
+      <b>Film</b>: ${film.Film}<br>
+      <b>Title</b>: ${film.Title}<br>
+      <b>Director</b>: ${film.Director}<br>
+      <b>Producers</b>: ${film.Producer}<br>
+      <b>Writers</b>: ${film.Writer}<br>
+      <b>Composer</b>: ${film.Composer}<br>
+      <b>Budget</b>: ${film.Budget}<br>
+      <b>Box Office</b>: ${film.Box-Office}<br>
+      <div class="pic"><img src="https://newmanix.com/classes/it122/bond-web-service/thumbnails/dr-no.jpg">
 
+    }
   </script>
 </body>
 </html>
