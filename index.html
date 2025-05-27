@@ -51,6 +51,8 @@
     var url = "https://ramsey80.github.io/bond-api-client/";
   //  var url = "https://scaling-computing-machine-6xq654qgr66crq74-3000.app.github.dev/";
     async function loadAJAX(cat) {
+      document.getElementById("output").innerHTML = "";
+
       const endpoint = url + "api.php?cat=" + cat;
       try {
         const response = await fetch(endpoint, { method: "GET", mode: "cors" });
