@@ -69,7 +69,6 @@
       //  document.getElementById("output").innerHTML = myData;
         
       //  document.getElementById("filmtitle").innerHTML = data.title;
-
         data.films.forEach(film =>{
           const filmHTML = bondTemplate(film);
           document.getElementById("output").innerHTML += filmHTML;
@@ -81,19 +80,18 @@
     function bondTemplate(film){
       return `
       <div class="film">
-      <b>Film</b>: ${film.Film}<br>
-      <b>Title</b>: ${film.Title}<br>
-      <b>Year</b>: ${film.Year}<br>
-      <b>Director</b>: ${film.Director}<br>
-      <b>Producers</b>: ${film.Producer}<br>
-      <b>Writers</b>: ${film.Writer}<br>
-      <b>Composer</b>: ${film.Composer}<br>
-      <b>Bond</b>: ${film.Bond}<br>
-      <b>Budget</b>: ${film.Budget}<br>
-      <b>Box Office</b>: ${film.BoxOffice}<br>
-      <div class="pic"><img src="${url}thumbnails/${film.Image}">
-      </div>
-      `;
+        <b>Film</b>: ${film.Film}<br>
+        <b>Title</b>: ${film.Title}<br>
+        <b>Year</b>: ${film.Year}<br>
+        <b>Director</b>: ${film.Director}<br>
+        <b>Producers</b>: ${film.Producer}<br>
+        <b>Writers</b>: ${film.Writer}<br>
+        <b>Composer</b>: ${film.Composer}<br>
+        <b>Bond</b>: ${film.Bond}<br>
+        <b>Budget</b>: ${film.Budget}<br>
+        <b>Box Office</b>: ${film.BoxOffice}<br>
+        <div class="pic"><img src="${url}thumbnails/${film.Image}"></div>
+      </div>`;
       
 
     }
