@@ -65,11 +65,11 @@
       //  myData = "<pre>" + myData + "</pre>";
       //  document.getElementById("output").innerHTML = myData;
         
-        document.getElementById("filmtitle").innerHTML = data.title;
+      //  document.getElementById("filmtitle").innerHTML = data.title;
 
         data.films.forEach(film =>{
           const filmHTML = bondTemplate(film);
-          document.getElementById("output").innerHTML += film.HTML ;
+          document.getElementById("output").innerHTML += film.HTML;
         });
       } catch (err) {
         document.getElementById("output").innerText = "Error loading data: " + err;
