@@ -76,7 +76,7 @@
       }
     }
     function bondTemplate(film){
-      return ``;
+      return `
       <b>Film</b>: ${film.Film}<br>
       <b>Title</b>: ${film.Title}<br>
       <b>Director</b>: ${film.Director}<br>
@@ -86,6 +86,8 @@
       <b>Budget</b>: ${film.Budget}<br>
       <b>Box Office</b>: ${film.Box-Office}<br>
       <div class="pic"><img src="${url}thumbnails/${film.Image}">
+      `;
+      
 
     }
   </script>
