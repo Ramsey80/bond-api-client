@@ -72,7 +72,7 @@
 
         data.films.forEach(film =>{
           const filmHTML = bondTemplate(film);
-          document.getElementById("output").innerHTML += film.HTML;
+          document.getElementById("output").innerHTML += filmHTML;
         });
       } catch (err) {
         document.getElementById("output").innerText = "Error loading data: " + err;
